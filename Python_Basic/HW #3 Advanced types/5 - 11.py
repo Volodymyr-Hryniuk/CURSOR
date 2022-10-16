@@ -38,5 +38,5 @@ print("Anna has %s apples and %s peaches." % (apples, peaches), "\n")
 # 11. With variable substitutions by name (hint: by using dict)
 
 print("11.")
-count_fruit = {'appl': 7, 'peach': 4}
-print(f"Anna has {count_fruit['appl']} apples and {count_fruit['peach']} peaches.")
+count_fruit = {'apple': 7, 'peach': 4}
+print(f"Anna has {count_fruit['apple']} apples and {count_fruit['peach']} peaches.")
