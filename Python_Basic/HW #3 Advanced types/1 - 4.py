@@ -1,4 +1,4 @@
-#1. Define the id of next variables:
+# 1. Define the id of next variables:
 int_a = 55
 str_b = 'cursor'
 set_c = {1, 2, 3}
@@ -10,7 +10,7 @@ print("int_a id:", id(int_a),"\n" "str_b id:", id(str_b),
       "\n" "set_c id:", id(set_c),"\n" "lst_d id:", id(lst_d),
       "\n" "dict_e id:", id(dict_e), "\n")
 
-#2. Append 4 and 5 to the lst_d and define the id one more time.
+# 2. Append 4 and 5 to the lst_d and define the id one more time.
 
 print("#2.")
 print("lst_d:", lst_d, "- lst_d id:",id(lst_d))
@@ -20,14 +20,14 @@ lst_d.append(5)
 
 print("lst_d:", lst_d, "- lst_d id:",id(lst_d), "\n")
 
-#3. Define the type of each object from step 1.
+# 3. Define the type of each object from step 1.
 
 print("#3.")
 print("int_a type:", type(int_a),"\n" "str_b type:", type(str_b),
       "\n" "set_c type:", type(set_c),"\n" "lst_d type:", type(lst_d),
       "\n" "dict_e type:", type(dict_e), "\n")
 
-#4. Check the type of the objects by using isinstance.
+# 4. Check the type of the objects by using isinstance.
 
 print("#4.")
 print("instance of int_a is an integer?",isinstance(int_a, int))
