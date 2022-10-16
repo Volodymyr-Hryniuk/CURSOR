@@ -23,7 +23,7 @@ print("lst_d:", lst_d, "- lst_d id:", id(lst_d), "\n")
 # 3. Define the type of each object from step 1.
 
 print("3.")
-print("int_a type:", type(int_a),"\n" "str_b type:", type(str_b),
+print("int_a type:", type(int_a), "\n" "str_b type:", type(str_b),
       "\n" "set_c type:", type(set_c), "\n" "lst_d type:", type(lst_d),
       "\n" "dict_e type:", type(dict_e), "\n")
 
