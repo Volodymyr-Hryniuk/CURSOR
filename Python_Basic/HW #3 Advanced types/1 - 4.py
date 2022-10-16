@@ -35,3 +35,4 @@ print("instance of str_b is an string?", isinstance(str_b, str))
 print("instance of set_c is an set?", isinstance(set_c, set))
 print("instance of lst_d is an list?", isinstance(lst_d, list))
 print("instance of dict_e is an dict?", isinstance(dict_e, dict))
+
