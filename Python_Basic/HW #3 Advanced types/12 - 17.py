@@ -1,6 +1,6 @@
 # Comprehensions:
 
-# 12. Convert (1) to list comprehension
+# 12. Convert (1) to list comprehension.
 
 # (1)
 # lst = []
