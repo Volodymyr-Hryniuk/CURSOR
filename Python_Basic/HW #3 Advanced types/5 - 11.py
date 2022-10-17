@@ -3,7 +3,7 @@
 # Replace the placeholders with a value:
 # "Anna has ___ apples and ___ peaches."
 
-# 5. With .format and curly braces {}
+# 5. With .format and curly braces {}.
 
 print("5.")
 print("Anna has {} apples and {} peaches.".format(16, 8))
@@ -35,7 +35,7 @@ print(f"Anna has {apples} apples and {peaches} peaches.")
 print("\n10.")
 print("Anna has %s apples and %s peaches." % (apples, peaches))
 
-# 11. With variable substitutions by name (hint: by using dict)
+# 11. With variable substitutions by name (hint: by using dict).
 
 print("\n11.")
 count_fruit = {'apple': 7, 'peach': 4}
