@@ -59,7 +59,7 @@ list_B = [5, 6, 7]
 lst_pow = list(map(pow, list_B, list_A))
 print("The first variant 'Raising to a power'", lst_pow)
 
-# Second variant:
+# Raising list number to the corresponding number on another list:
 lst_2 = list(map(lambda x: x + 3, list_A))
 print("The second variant 'Raising list number to the corresponding number on another list'", lst_2)
 
