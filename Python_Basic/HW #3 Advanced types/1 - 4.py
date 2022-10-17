@@ -1,4 +1,5 @@
 # 1. Define the id of next variables:
+
 int_a = 55
 str_b = 'cursor'
 set_c = {1, 2, 3}
