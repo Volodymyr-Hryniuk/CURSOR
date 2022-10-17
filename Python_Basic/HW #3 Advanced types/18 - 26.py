@@ -68,7 +68,7 @@ print(lst_2, "\n")
 # 24. Use filter and lambda to filter the number of a lst_to_sort with elem % 2 == 1.
 
 print("24.")
-lst_3 = list(filter(lambda x: (x % 2 == 1), lst_to_sort))
+lst_3 = list(filter(lambda x: x % 2 == 1, lst_to_sort))
 print(lst_3, "\n")
 
 # 25. Considering the range of values: b = range(-10, 10), use the function filter to return only negative numbers.
