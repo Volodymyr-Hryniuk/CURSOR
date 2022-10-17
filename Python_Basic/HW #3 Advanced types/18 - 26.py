@@ -34,11 +34,13 @@ print(foo(14, 13, 15))
 
 print("\n20.")
 lst_to_sort = [5, 18, 1, 24, 33, 15, 13, 55]
+print("List to sort:", lst_to_sort)
 print("Sort from min to max", sorted(lst_to_sort))
 
 # 21. Sort lst_to_sort from max to min.
 
 print("\n21.")
+print("List to sort:", lst_to_sort)
 print("Sort from max to min", sorted(lst_to_sort, reverse=True))
 
 # 22. Use map and lambda to update the lst_to_sort by multiply each element by 2.
