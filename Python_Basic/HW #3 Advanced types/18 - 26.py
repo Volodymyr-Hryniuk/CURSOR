@@ -62,7 +62,7 @@ lst_2 = list(map(lambda x, y: x * 0 + y, list_A, list_B))
 print(lst_2, "\n")
 
 # Second variant:
-# lst_2 = list(map(lambda number: number + 3, list_A))
+# lst_2 = list(map(lambda x: x + 3, list_A))
 # print(lst_2, "\n")
 
 # 24. Use filter and lambda to filter the number of a lst_to_sort with elem % 2 == 1.
@@ -75,7 +75,7 @@ print(lst_3, "\n")
 
 print("25.")
 b = range(-10, 10)
-values = list(filter(lambda number: number < 0, b))
+values = list(filter(lambda x: x < 0, b))
 print(values, "\n")
 
 # 26. Using the filter function, find the values that are common to the two lists:
@@ -84,5 +84,5 @@ print("26.")
 list_1 = [1, 2, 3, 5, 7, 9]
 list_2 = [2, 3, 5, 6, 7, 8]
 
-filtered = list(filter(lambda element: element in list_1, list_2))
+filtered = list(filter(lambda x: x in list_1, list_2))
 print(filtered)
