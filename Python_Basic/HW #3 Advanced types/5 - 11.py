@@ -6,37 +6,37 @@
 # 5. With .format and curly braces {}
 
 print("5.")
-print("Anna has {} apples and {} peaches.".format(16, 8), "\n")
+print("Anna has {} apples and {} peaches.".format(16, 8))
 
 # 6. By passing index numbers into the curly braces.
 
-print("6.")
-print("Anna has {0} apples and {1} peaches.".format(10, 11), "\n")
+print("\n6.")
+print("Anna has {0} apples and {1} peaches.".format(10, 11))
 
 # 7. By using keyword arguments into the curly braces.
 
-print("7.")
-print("Anna has {apples} apples and {peaches} peaches.".format(apples=5, peaches=7), "\n")
+print("\n7.")
+print("Anna has {apples} apples and {peaches} peaches.".format(apples=5, peaches=7))
 
 # 8. With indicators of field size (5 chars for the first and 3 for the second).
 
-print("8.")
-print("Anna has {0:1} apples and {1:1} peaches." .format(6, 8), "\n")
+print("\n8.")
+print("Anna has {0:1} apples and {1:1} peaches." .format(6, 8))
 
 # 9. With f-strings and variables.
 
-print("9.")
+print("\n9.")
 apples = 3
 peaches = 7
-print(f"Anna has {apples} apples and {peaches} peaches.", "\n")
+print(f"Anna has {apples} apples and {peaches} peaches.")
 
 # 10. With % operator
 
-print("10.")
-print("Anna has %s apples and %s peaches." % (apples, peaches), "\n")
+print("\n10.")
+print("Anna has %s apples and %s peaches." % (apples, peaches))
 
 # 11. With variable substitutions by name (hint: by using dict)
 
-print("11.")
+print("\n11.")
 count_fruit = {'apple': 7, 'peach': 4}
 print(f"Anna has {count_fruit['apple']} apples and {count_fruit['peach']} peaches.")
