@@ -61,7 +61,7 @@ print("The first variant 'Raising to a power'", lst_pow)
 
 # Raising list number to the corresponding number on another list:
 lst_2 = list(map(lambda x: x + 3, list_A))
-print("The second variant 'Raising list number to the corresponding number on another list'", lst_2)
+print("The second variant 'Raising each list number to the corresponding number on another list'", lst_2)
 
 # The third variant:
 # lst_3 = list(map(lambda x, y: x * 0 + y, list_A, list_B))
