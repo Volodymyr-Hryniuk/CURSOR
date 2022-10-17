@@ -58,8 +58,12 @@ list_B = [5, 6, 7]
 # print(lst_pow, "\n")
 
 # Raise each list number to the corresponding number on another list:
-lst_2 = list(map(lambda number: number + 3, list_A))
+lst_2 = list(map(lambda x, y: x * 0 + y, list_A, list_B))
 print(lst_2, "\n")
+
+# Second variant:
+# lst_2 = list(map(lambda number: number + 3, list_A))
+# print(lst_2, "\n")
 
 # 24. Use filter and lambda to filter the number of a lst_to_sort with elem % 2 == 1.
 
