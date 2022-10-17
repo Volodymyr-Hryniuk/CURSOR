@@ -54,8 +54,8 @@ list_A = [2, 3, 4]
 list_B = [5, 6, 7]
 
 # Raising to a power:
-lst_pow = list(map(pow, list_B, list_A))
-print(lst_pow, "\n")
+# lst_pow = list(map(pow, list_B, list_A))
+# print(lst_pow, "\n")
 
 # Raise each list number to the corresponding number on another list:
 lst_2 = list(map(lambda number: number + 3, list_A))
