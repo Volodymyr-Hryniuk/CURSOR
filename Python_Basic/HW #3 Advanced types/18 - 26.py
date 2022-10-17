@@ -54,22 +54,22 @@ list_A = [2, 3, 4]
 list_B = [5, 6, 7]
 
 # Raising to a power:
-# lst_pow = list(map(pow, list_B, list_A))
-# print(lst_pow)
-
-# Raise each list number to the corresponding number on another list:
-lst_2 = list(map(lambda x, y: x * 0 + y, list_A, list_B))
-print(lst_2)
+lst_pow = list(map(pow, list_B, list_A))
+print("The first variant 'Raising to a power'", lst_pow)
 
 # Second variant:
-# lst_2 = list(map(lambda x: x + 3, list_A))
-# print(lst_2)
+lst_2 = list(map(lambda x: x + 3, list_A))
+print("The second variant 'Raising list number to the corresponding number on another list'", lst_2)
+
+# The third variant:
+# lst_3 = list(map(lambda x, y: x * 0 + y, list_A, list_B))
+# print("The third variant", lst_3)
 
 # 24. Use filter and lambda to filter the number of a lst_to_sort with elem % 2 == 1.
 
 print("\n24.")
-lst_3 = list(filter(lambda x: x % 2 == 1, lst_to_sort))
-print(lst_3)
+lst_4 = list(filter(lambda x: x % 2 == 1, lst_to_sort))
+print(lst_4)
 
 # 25. Considering the range of values: b = range(-10, 10), use the function filter to return only negative numbers.
 
