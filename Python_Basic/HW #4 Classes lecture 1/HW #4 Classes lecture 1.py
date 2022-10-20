@@ -134,6 +134,15 @@ class Wolf:
         print('Wolf today eated:', self.eat_for_wolf)
 
 
+for_wolf = Wolf(eat_for_wolf='rabbit meat')
+for_bear = Bear(eat_for_bear='fish')
+
+animals = (for_bear, for_wolf)
+# print(type(animals))
+for food in animals:
+    food.eat()
+
+
 # 8*. Створіть клас City з атрибутами екземпляра name i population, сторіть новий екземпляр цього класу,
 # лише коли population > 1500, інакше повертається повідомлення: "Your city is too small".
 # Підказка: використовуєте для цього завдання магічні методи
