@@ -158,15 +158,16 @@ class City:
         if cls.city[1] < 1500:
             return print(f"Your city is too small")
         else:
-            return print(f'The city of {cls.city[0]} has a population of {cls.city[1]} people')
+            print(f'The city of {cls.city[0]} has a population of {cls.city[1]} people')
+            return super().__new__(cls)
 
     def __init__(self, name, population):
         self.name = name
         self.population = population
 
 
-Kiyv = City('Kiyv', 2950702)
-Boryspil = City('Boryspil', 64117)
-Gorbovichi = City('Gorbovichi', 267)
-Kharkiv = City('Kharkiv', 1421125)
-Zhitomir = City('Zhitomir', 261358)
+City('Kiyv', 2950702)
+City('Boryspil', 64117)
+City('Gorbovichi', 267)
+City('Kharkiv', 1421125)
+City('Zhitomir', 261358)
