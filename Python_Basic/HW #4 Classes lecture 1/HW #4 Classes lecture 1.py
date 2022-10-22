@@ -145,6 +145,28 @@ for food in animals:
 
 # 8*. Створіть клас City з атрибутами екземпляра name i population, сторіть новий екземпляр цього класу,
 # лише коли population > 1500, інакше повертається повідомлення: "Your city is too small".
-# Підказка: використовуєте для цього завдання магічні методи
+# Підказка: використовуєте для цього завдання, магічні методи.
 
 print("\n#8")
+
+
+class City:
+    city = []
+
+    def __new__(cls, name, population):
+        cls.city = [name, population]
+        if cls.city[1] < 1500:
+            return print(f"Your city is too small")
+        else:
+            return print(f'The city of {cls.city[0]} has a population of {cls.city[1]} people')
+
+    def __init__(self, name, population):
+        self.name = name
+        self.population = population
+
+
+Kiyv = City('Kiyv', 2950702)
+Boryspil = City('Boryspil', 64117)
+Gorbovichi = City('Gorbovichi', 267)
+Kharkiv = City('Kharkiv', 1421125)
+Zhitomir = City('Zhitomir', 261358)
