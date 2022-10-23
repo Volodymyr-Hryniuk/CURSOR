@@ -7,12 +7,24 @@ class Laptop:
     Make the class with composition.
     """
 
+    def __init__(self):
+        part = Battery('Battery is a part of laptop')
+        self.laptop = part.device
+
 
 class Battery:
     """
     Make the class with composition.
     """
+    def __init__(self, device):
+        self.device = device
 
+
+battery = Laptop()
+print(battery.laptop)
+
+cell = Battery(device='Six cell')
+print(cell.device)
 
 # 2.
 print("\n#2")
@@ -22,13 +34,26 @@ class Guitar:
     """
     Make the class with aggregation
     """
+    def __init__(self, string):
+        self.string = string
 
 
 class GuitarString:
     """
     Make the class with aggregation
     """
+    def __init__(self, string_type):
+        self.string_type = string_type
 
+
+guitar = GuitarString(string_type='metal string')
+fender = Guitar(guitar)
+
+guitar_six_string = Guitar(string='Six string')
+print(guitar_six_string.string)
+
+metal_string_guitar = GuitarString(string_type='Metal string')
+print(metal_string_guitar.string_type)
 
 # 3
 print("\n#3")
@@ -38,7 +63,18 @@ class Calc:
     """
     Створіть клас з одним методом "add_nums" та 3 атрибутами, який повертає суму цих атрибутів.
     """
+    def __init__(self, atr_1, atr_2, atr_3):
+        self.atr_1 = atr_1
+        self.atr_2 = atr_2
+        self.atr_3 = atr_3
 
+    def add_nums(self):
+        sum_atr = sum([self.atr_1, self.atr_2, self.atr_3])
+        return sum_atr
+
+
+nums = Calc(54, 33, 22)
+print(nums.add_nums())
 
 # 4*.
 print("\n#4")
