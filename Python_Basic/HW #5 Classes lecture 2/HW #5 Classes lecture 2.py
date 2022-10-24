@@ -142,18 +142,6 @@ print(address_book_1)
 # 7. Create the same class (6) but using NamedTuple
 print("\n#7")
 
-
-@dataclasses.dataclass
-class AddressBookDataClass:
-    key: int
-    name: str
-    phone_number: str
-    address: str
-    email: str
-    birthday: str
-    age: int
-
-
 contact = collections.namedtuple('contact', ['key', 'name', 'phone_number', 'address', 'email', 'birthday', 'age'])
 Person = contact(1, 'Ivan', '095xxxxxxx', 'Ozerna str.', 'xxx@ukr.net', '6 December', 23)
 contact_1 = collections.namedtuple('contact_1', ['key', 'name', 'phone_number', 'address', 'email', 'birthday', 'age'])
@@ -182,6 +170,15 @@ class AddressBook:
         self.birthday = birthday
         self.age = age
 
+    def __repr__(self):
+        return print(f"AddressBook(key='{self.key}',"
+                     f" name='{self.name}', phone_number='{self.phone_number}',"
+                     f" address='{self.address}', email='{self.email}',"
+                     f" birthday='{self.birthday}', age='{self.age}')")
+
+
+address_book_2 = AddressBook(1, 'Ihor', '096xxxxxxx', 'Bolotna str.', '1xx@ukr.net', '25 November', 25)
+AddressBook.__repr__(address_book_2)
 
 # 9.
 print("\n#9")
