@@ -171,14 +171,28 @@ class AddressBook:
         self.age = age
 
     def __repr__(self):
-        return print(f"AddressBook(key='{self.key}',"
+        rep = (f"AddressBook(key='{self.key}',"
+               f" name='{self.name}', phone_number='{self.phone_number}',"
+               f" address='{self.address}', email='{self.email}',"
+               f" birthday='{self.birthday}', age='{self.age}')")
+        return rep
+
+    def representation(self):
+        repr_1 = str(f"AddressBook(key='{self.key}',"
                      f" name='{self.name}', phone_number='{self.phone_number}',"
                      f" address='{self.address}', email='{self.email}',"
                      f" birthday='{self.birthday}', age='{self.age}')")
+        return repr_1
 
 
 address_book_2 = AddressBook(1, 'Ihor', '096xxxxxxx', 'Bolotna str.', '1xx@ukr.net', '25 November', 25)
-AddressBook.__repr__(address_book_2)
+address_book_3 = AddressBook(1, 'Ivan', '095xxxxxxx', 'Ozerna str.', 'xxx@ukr.net', '6 December', 23)
+
+print(repr(address_book_2))
+print(address_book_3.representation())
+
+print(type(repr(address_book_2)))
+print(type(address_book_3.representation()))
 
 # 9.
 print("\n#9")
