@@ -171,8 +171,16 @@ class AddressBook:
     Create regular class taking 7 params on init - key, name, phone_number, address, email, birthday, age
     Make its str() representation the same as for AddressBookDataClass defined above.
     Expected result by printing instance of
-    AddressBook: AddressBook(key='', name='', phone_number='', address='', email='', birthday= '', age='')
+    AddressBook: AddressBook(key='', name='', phone_number='', address='', email='', birthday='', age='')
     """
+    def __init__(self, key, name, phone_number, address, email, birthday, age):
+        self.key = key
+        self.name = name
+        self.phone_number = phone_number
+        self.address = address
+        self.email = email
+        self.birthday = birthday
+        self.age = age
 
 
 # 9.
