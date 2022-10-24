@@ -1,4 +1,5 @@
 import dataclasses
+import collections
 
 # 1.
 print("#1")
@@ -132,8 +133,8 @@ class AddressBookDataClass:
     age: int
 
 
-address_book = AddressBookDataClass(1, 'ivan', '095xxxxxxx', 'Ozerna str.', 'xxx@ukr.net', '6 December', 23)
-address_book_1 = AddressBookDataClass(1, 'ihor', '096xxxxxxx', 'Bolotna str.', '1xx@ukr.net', '25 November', 25)
+address_book = AddressBookDataClass(1, 'Ivan', '095xxxxxxx', 'Ozerna str.', 'xxx@ukr.net', '6 December', 23)
+address_book_1 = AddressBookDataClass(1, 'Ihor', '096xxxxxxx', 'Bolotna str.', '1xx@ukr.net', '25 November', 25)
 
 print(address_book)
 print(address_book_1)
@@ -141,6 +142,25 @@ print(address_book_1)
 # 7. Create the same class (6) but using NamedTuple
 print("\n#7")
 
+
+@dataclasses.dataclass
+class AddressBookDataClass:
+    key: int
+    name: str
+    phone_number: str
+    address: str
+    email: str
+    birthday: str
+    age: int
+
+
+contact = collections.namedtuple('contact', ['key', 'name', 'phone_number', 'address', 'email', 'birthday', 'age'])
+Person = contact(1, 'Ivan', '095xxxxxxx', 'Ozerna str.', 'xxx@ukr.net', '6 December', 23)
+contact_1 = collections.namedtuple('contact_1', ['key', 'name', 'phone_number', 'address', 'email', 'birthday', 'age'])
+Person_1 = contact_1(1, 'Ihor', '096xxxxxxx', 'Bolotna str.', '1xx@ukr.net', '25 November', 25)
+
+print(Person)
+print(Person_1)
 
 # 8.
 print("\n#8")
