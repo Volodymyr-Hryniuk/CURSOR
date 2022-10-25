@@ -207,6 +207,15 @@ class Person:
     country = "USA"
 
 
+pers = Person()
+print(f'Person age is {pers.age}')
+setattr(pers, 'age', 48)
+print(f'Person age is {pers.age}')
+
+# print(f'Person age is {Person.age}')
+# Person.age = 48
+# print(f'Person age is {Person.age}')
+
 # 10.
 print("\n#10")
 
