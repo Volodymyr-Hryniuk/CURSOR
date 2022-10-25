@@ -208,9 +208,9 @@ class Person:
 
 
 pers = Person()
-print(f'Person age is {pers.age}')
+print(f'Person age, before modification age property is {pers.age}')
 setattr(pers, 'age', 48)
-print(f'Person age is {pers.age}')
+print(f'Person age, after modification age property is {pers.age}')
 
 # print(f'Person age is {Person.age}')
 # Person.age = 48
