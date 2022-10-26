@@ -95,6 +95,19 @@ class Pasta:
         pasta_2 = Pasta.bolognaise()
         pasta_2.ingredients will equal to ['bacon', 'parmesan', 'eggs']
     """
+    ingredients = ["tomato", "cucumber", 'bacon', 'parmesan', 'eggs']
+
+    def __init__(self, ingredients):
+        self.ingredients = ingredients
+        self.pasta_1 = ingredients("tomato", "cucumber")
+        self.pasta_2 = ingredients('bacon', 'parmesan', 'eggs')
+
+    @classmethod
+    def carbonara(cls):
+
+
+    @classmethod
+    def bolognaise(cls):
 
 
 # 5*.
