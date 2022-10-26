@@ -231,3 +231,13 @@ class Student:
     def __init__(self, id, name):
         self.id = id
         self.name = name
+
+
+setattr(Student, 'email', 'student_mail@mail.net')
+# Student.email = 'student_mail@mail.net'
+
+# student_email = getattr(Student, 'email')
+# print(student_email)
+
+student_email = Student
+print(getattr(student_email, 'email'))
