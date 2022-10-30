@@ -1,7 +1,6 @@
 # 1. Implement class iterator for Fibonacci numbers https://en.wikipedia.org/wiki/Fibonacci_number
 # Iterator get numbers of first Fibonacci numbers
 # Example:
-#
 # for i in FibonacciNumbers(10):
 #     print(i)
 # 0
