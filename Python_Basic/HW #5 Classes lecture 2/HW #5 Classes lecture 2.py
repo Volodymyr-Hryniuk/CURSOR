@@ -132,6 +132,26 @@ class Concert:
         concert.visitors_count = 1000
         print(concert.visitors_count)  # 50
     """
+    max_visitor_num = int()
+
+    def __init__(self, visitors_count):
+        self.visitors_count = visitors_count
+
+    def visitors(self):
+        if self.visitors_count >= self.max_visitor_num:
+            self.visitors_count = self.max_visitor_num
+            return self.visitors_count
+        else:
+            return self.visitors_count
+
+
+Concert.max_visitor_num = 50
+concert = Concert(10)
+print(concert.visitors())
+
+Concert.max_visitor_num = 100
+concert = Concert(1000)
+print(concert.visitors())
 
 
 # 6.
