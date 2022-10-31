@@ -18,16 +18,22 @@ print("#1")
 
 
 class FibonacciNumbers:
+    number = 0
 
-    def __init__(self):
-        pass
+    def __init__(self, count):
+        self.count = count
+        self.a, self.b = 0, 1
 
-    def __iter__(self):
-        pass
+    def __getitem__(self, f_number):
+        self.number += 1
+        if self.number == self.count:
+            raise StopIteration
+        self.a, self.b = self.b, self.a + self.b
+        return self.b
 
-    def __next__(self):
-        pass
 
+for i in FibonacciNumbers(11):
+    print(i)
 
 # 2.* Implement generator for Fibonacci numbers
 print("\n#2")
@@ -36,8 +42,7 @@ print("\n#2")
 class FibonacciGenerator:
     def __init__(self, count):
         self.count = count
-        self.current_number = 0
-        self.next_number = 1
+        self.current_number, self.next_number = 0, 1
 
     def __iter__(self):
         return self
