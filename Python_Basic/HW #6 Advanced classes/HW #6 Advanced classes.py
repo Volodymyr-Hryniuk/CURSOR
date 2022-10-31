@@ -16,8 +16,45 @@
 # 55
 print("#1")
 
+
+class FibonacciNumbers:
+
+    def __init__(self):
+        pass
+
+    def __iter__(self):
+        pass
+
+    def __next__(self):
+        pass
+
+
 # 2.* Implement generator for Fibonacci numbers
 print("\n#2")
+
+
+class FibonacciGenerator:
+    def __init__(self, count):
+        self.count = count
+        self.current_number = 0
+        self.next_number = 1
+
+    def __iter__(self):
+        return self
+
+    def __next__(self):
+        if self.count == 0:
+            raise StopIteration
+        self.count -= 1
+        next_number = self.current_number + self.next_number
+        self.current_number = self.next_number
+        self.next_number = next_number
+
+        return self.current_number
+
+
+for i in FibonacciGenerator(10):
+    print(i)
 
 # 3. Write generator expression that returns square numbers of integers from 0 to 10
 print("\n#3")
