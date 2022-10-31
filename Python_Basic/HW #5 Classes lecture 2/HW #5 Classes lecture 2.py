@@ -132,9 +132,9 @@ class Concert:
         concert.visitors_count = 1000
         print(concert.visitors_count) # 50
     """
-    max_visitor_num = int()
+    max_visitor_num: int = 50
 
-    def __init__(self, visitors_count):
+    def __init__(self, visitors_count: int):
         self.visitors_count = visitors_count
 
     def visitors(self):
