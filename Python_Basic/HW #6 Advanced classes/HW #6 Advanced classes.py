@@ -18,21 +18,22 @@ print("#1")
 
 
 class FibonacciNumbers:
+
     number = 0
 
     def __init__(self, count):
         self.count = count
-        self.a, self.b = 0, 1
+        self.current_number, self.next_number = 0, 1
 
-    def __getitem__(self, f_number):
+    def __getitem__(self, number):
         self.number += 1
         if self.number == self.count:
             raise StopIteration
-        self.a, self.b = self.b, self.a + self.b
-        return self.b
+        self.current_number, self.next_number = self.next_number, self.current_number + self.next_number
+        return self.next_number
 
 
-for i in FibonacciNumbers(11):
+for i in FibonacciNumbers(10):
     print(i)
 
 # 2.* Implement generator for Fibonacci numbers
@@ -61,8 +62,36 @@ class FibonacciGenerator:
 for i in FibonacciGenerator(10):
     print(i)
 
+print("\n#2 - Second Version")
+
+
+class FibonacciGenerator:
+    def __init__(self, count):
+        self.count = count
+        self.current_number, self.next_number = 0, 1
+
+    def fibonacci_generator(self):
+        while 0 < self.count:
+            self.current_number, self.next_number = self.next_number, self.current_number + self.next_number
+            yield self.next_number
+            self.count -= 1
+
+
+iterat = FibonacciGenerator(10)
+for i in iterat.fibonacci_generator():
+    print(i)
+
 # 3. Write generator expression that returns square numbers of integers from 0 to 10
 print("\n#3")
+
+
+def square(count):
+    for x in range(count):
+        yield x**2
+
+
+for i in square(10):
+    print(i)
 
 # 4. Create an interface for the Laptop with the next methods: Screen, Keyboard, Touchpad, WebCam, Ports, Dynamics
 # and create an HPLaptop class by using your interface.
