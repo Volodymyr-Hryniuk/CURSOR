@@ -255,6 +255,20 @@ print(f'Person age, after modification age property is {pers.age}')
 # print(f'Person age is {Person.age}')
 # Person.age = 48
 # print(f'Person age is {Person.age}')
+print("\n#9 - Second Version")
+
+
+class Person:
+    def __init__(self, name="John", age=36, country="USA"):
+        self.name = name
+        self.age = age
+        self.country = country
+
+
+pers = Person()
+print(f'Person age, before modification age property is {pers.age}')
+setattr(pers, 'age', 48)
+print(f'Person age, after modification age property is {pers.age}')
 
 # 10.
 print("\n#10")
