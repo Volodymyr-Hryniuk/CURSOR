@@ -88,7 +88,7 @@ print("\n#3")
 
 
 def square(count):
-    for x in range(count):
+    for x in range(1, count):
         yield x**2
 
 
